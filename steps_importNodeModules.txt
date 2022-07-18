@@ -1,0 +1,57 @@
+The “npm init” command will initialize a project and create the package.json file.
+importing of node modules is done in 2 steps->
+1. npm i <module/library name> -> this will install it in package.json file in dependencies section
+2. In the .js program it is then imported using require keyword
+steps->
+1.npm init
+keep pressing enter to take the default values.
+output -> package.json file will be created and default values are stored in it.
+2. Creating a new server.js file
+Update the code->
+const http = require('http');
+const loader = require('lodash')
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res1) => {
+  res1.statusCode = 200;
+  res1.setHeader('Content-Type', 'text/plain');
+  // to display below text in browser
+  res1.end('This is import node modules demo!');
+  
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res1) => {
+  res1.statusCode = 200;
+  res1.setHeader('Content-Type', 'text/plain');
+  // to display below text in browser
+  res1.end('This is import node modules demo!');
+  
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+// To execute it use below command
+// node CreateServer.js
+3. Now add below line->
+const loader = require('lodash')
+and execute the program again -> 
+node .\server.js
+click on node .\server.js
+output -> u will see errors
+4. Now ,
+npm i lodash
+5. execute the program again
+node .\server.js
+click on node .\server.js
+output -> u will not see errors and will see below line
+This is import node modules demo!

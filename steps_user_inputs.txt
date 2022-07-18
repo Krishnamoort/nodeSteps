@@ -1,0 +1,6 @@
+steps->
+1. npm i readline-sync
+-> this will install it in package.json file in dependencies section
+2. update userInput.js
+3. To execute the progam use below line
+node userInput.js

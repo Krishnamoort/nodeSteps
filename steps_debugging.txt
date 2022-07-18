@@ -1,0 +1,26 @@
+Ways to debug
+steps->
+
+1. In terminal type
+ node debug app.js -> deprecated
+ use below line instead->
+ node inspect app.js
+next -> to move to next line
+watch("<variable name")->Add the expression or variable into watch.example watch("a")
+watchers-> to see value of watch
+ctrl +c twice to come output
+2. Build In debugging in IDE
+ctrl +, or settings-> debug>javascript:autoattach -> always
+ctrl+shift+D
+Open the .js program you want to debug
+put a breakpoint before the line you want to start debuging
+In left side, in watch window click + to add watch expression
+click fn key + f5 or Run->debug
+Use fn key + f11 or debug menu 
+
+Note->Node inspector is GUI based debugger -deprecated and not maintained
+npm install -g node-inspector ->This module is part of Node.js core and does not need to be installed separately.
+
+The call stack is a list of all the active functions that have been called to get to the current point of execution. The call stack includes an entry for each function called, as well as which line of code will be returned to when the function returns.
+VS Code stores debug configurations in a file called launch.json
+inside of a folder called .vscode. 

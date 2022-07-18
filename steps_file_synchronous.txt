@@ -1,0 +1,6 @@
+No need to install fs module as it comes by default with Node.js installation.
+steps->
+1. Update fileSync.js
+2. node fileSync.js
+o/p->Hi..how are you?...written synchronously adding more text
+can u read me first please!

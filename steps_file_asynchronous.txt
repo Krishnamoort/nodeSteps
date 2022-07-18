@@ -1,0 +1,6 @@
+No need to install fs module as it comes by default with Node.js installation.
+steps->
+1. Update fileAsync.js
+2. node fileAsync.js
+o/p->can u read me first please!
+Hi..how are you?..written asynchronously
